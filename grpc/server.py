@@ -5,8 +5,6 @@ import calculator_pb2_grpc
 import calculator
 from concurrent import futures
 
-print('Hi')
-
 class CalculatorServicer(calculator_pb2_grpc.CalculatorServicer):
     def SquareRoot(self,request,context):
         response = calculator_pb2.Number()
